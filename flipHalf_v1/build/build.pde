@@ -14,7 +14,6 @@ void setup() {
   H.init(this).background(#cfcfcf).use3D(true);
   smooth();
 
-  //colors = new HColorPool(#942707, #E37F0F, #FFEA8E, #9FEEFF, #B2CC53, #526247, #FF8692, #CFCFCF);
   colors = new HColorPool(#AAAAAA, #BBBBBB, #CCCCCC, #DDDDDD, #FFFFFF, #222222, #333333, #555555, #888888);
 
   maincanvas = new HCanvas(width/2, height, P3D).autoClear(false).fade(1);
@@ -39,17 +38,6 @@ void setup() {
      .size( 15+((int)random(10)*5) )
      ;
      }
-    //public void run(Object obj) {
-    //  int ranEdges = round(random(5, 10));
-    //  float ranDepth = random(0.25, 0.75);
-
-    //  HPath path = (HPath) obj;
-    //  path.star( ranEdges, ranDepth ).strokeWeight(1)
-    //    .stroke(#000000, 50).size(15+((int)random(10)*5))
-    //    .fill(colors.getColor()) 
-    //    .loc( (int)random(width), (int)random(height), -(int)random(2000) )
-    //    .anchorAt(H.CENTER).rotation( (int)random(360) );
-    //}
   }
   )
   ;
