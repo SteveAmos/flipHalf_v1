@@ -6,7 +6,6 @@ import hype.interfaces.*;
 
 HColorPool    colors;
 HCanvas       maincanvas;
-HCanvas leftcanvas, rightcanvas;
 HDrawablePool pool;
 HTimer        timer;
 
@@ -22,8 +21,6 @@ void setup() {
   H.add(maincanvas);
   //textureMode(NORMAL);
 
-  leftcanvas = new HCanvas();
-  H.add(leftcanvas);
 
   pool = new HDrawablePool(300);
   pool.autoParent(maincanvas)
